@@ -1,0 +1,38 @@
+.li {
+  text-decoration: none;
+  /* Additional styling */
+  margin: 12px 0;
+}
+
+.navlink {
+  /* Additional styling */
+  color: #323232;
+  /* font-family: Roboto; */
+  font-weight: bold;
+  position: relative;
+  outline: none !important;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.navlink::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: 0.2s;
+}
+
+.navlink:hover,
+.navlink:focus {
+  color: #1E40AF;
+}
+
+.navlink:hover::after,
+.navlink:focus::after {
+  background-color: #1E40AF;
+  width: 100%;
+}
