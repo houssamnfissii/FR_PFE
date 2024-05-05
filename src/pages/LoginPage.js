@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { loginUser } from "../reducers/UserSlice"; // Assuming this is the path to your user slice
+
 import { Link, useNavigate } from 'react-router-dom';
 import HeaderV1 from '../components/Header/HeaderV1';
 
@@ -15,7 +15,7 @@ const LoginPage = () => {
         e.preventDefault();
         try {
             // Dispatch loginUser action with email and password
-            await dispatch(loginUser({ email, password }));
+            await dispatch();
 
             // Redirect to dashboard or any other route
             Navigate('/home');

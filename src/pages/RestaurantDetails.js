@@ -11,9 +11,9 @@ import { MdDescription, MdLocalDining } from "react-icons/md";
 import { BiTable } from "react-icons/bi";
 import { IoFastFoodOutline } from "react-icons/io5";
 import BookingResto from "../components/Booking/BookingResto";
-import { Carousel } from "@material-tailwind/react";
+// import { Carousel } from "@material-tailwind/react";
 import ReviewsPagination from "../components/Review";
-import HeaderV1 from "../components/Header/HeaderV1";
+// import HeaderV1 from "../components/Header/HeaderV1";
 import Footer from "../components/Footer/Footer";
 
 export default function RestaurantDetails() {
@@ -127,13 +127,13 @@ export default function RestaurantDetails() {
 
   return (
    <>
-   <HeaderV1/>
+   {/* <HeaderV1/> */}
    <section>
       <Container className="lg:mt-24 mt-12"> 
         <Row>
           <Col lg="8">
             <div className="tour__content">
-            <Carousel
+            {/* <Carousel
                 className="rounded-xl"
                 navigation={({ setActiveIndex, activeIndex, length }) => (
                   <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -157,7 +157,7 @@ export default function RestaurantDetails() {
                     alt={`image ${index + 1}`}
                   />
                 ))}
-              </Carousel>
+              </Carousel> */}
               <div className="tour__info">
                 <h2 className="text-3xl font-bold mb-4">{restaurant.name}  - {restaurant.cuisine.name}</h2>
                 <div className="flex flex-wrap items-center gap-5">

@@ -3,11 +3,11 @@ import axios from "axios";
 import "../styles/tour-details.css";
 import { useParams } from "react-router-dom";
 import calculateAvgRating from "../utils/avgRating";
-import { Container, Row, Col, Form, ListGroup } from "reactstrap";
+import { Container, Row, Col, Form, ListGroup } from "react-bootstrap";
 import TimeAgo from "../components/format-date/TimeAgo";
 
 import BookingHotel from "../components/Booking/BookingHotel";
-import { Carousel } from "@material-tailwind/react";
+// import { Carousel } from "@material-tailwind/react";
 import ReviewsPagination from "../components/Review";
 import HeaderV1 from "../components/Header/HeaderV1";
 import Footer from "../components/Footer/Footer";
@@ -122,7 +122,7 @@ export default function HotelDetails() {
         <Row>
           <Col lg="8">
             <div className="tour__content">
-              <Carousel
+              {/* <Carousel
                 className="rounded-xl"
                 navigation={({ setActiveIndex, activeIndex, length }) => (
                   <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -146,7 +146,7 @@ export default function HotelDetails() {
                     alt={`image ${index + 1}`}
                   />
                 ))}
-              </Carousel>
+              </Carousel> */}
               <div className="tour__info">
                 <h2 className="text-3xl font-bold mb-4">
                   {hotel.name} - {hotel.address}
